@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="source/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #neighbors .col-2 .card {
+            flex-grow: 1;
+        }
+    </style>
+    <title>Country Flags</title>
+</head>
+<body>
+<main>
+    <section id="alertMessage">
+<!--        Alert Message Here-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-4 mx-auto mt-3">-->
+<!--                    <div class="alert alert-danger text-center">-->
+<!--                        Aradığınız ülke bulunamadı-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto my-3">
+                <h1 class="text-center mb-3">Let's search a country</h1>
+                <div class="card" id="search">
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input id="textSearch" type="text" class="form-control">
+                            <button id="btnSearch" class="btn btn-primary">Load</button>
+                            <button id="btnLocation" class="btn btn-success">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="row" id="details">
+                        <!--Country Details-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header" >Neighbors</div>
+                    <div class="card-body">
+                        <div class="row"  id="neighbors">
+                            <!--Country Neighbors Flags-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="source/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
